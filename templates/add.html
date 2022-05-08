@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{%block title%}Add{% endblock %}
+{% block content%}
+<h1>WELCOME ADD</h1>
+<form method='post'>
+    {{form.hidden_tag()}}
+    {{form.name.label}}{{form.name()}}
+    {{form.submit()}}
+</form>
+{%endblock%}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{%block title%}list{% endblock %}
+{% block content%}
+<h1>WELCOME LIST</h1>
+<ul>
+    {% for wish in wishes%}
+    <li>{{wish.id , wish}}</li>
+    {%endfor%}
+</ul>
+{%endblock%}
